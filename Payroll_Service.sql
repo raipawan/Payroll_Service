@@ -73,6 +73,16 @@ ADD  Basic_Pay INT  NOT NULL DEFAULT 0,
  Net_Pay  INT  NOT NULL DEFAULT 0;
 
 
+  /*uc10*/
+   CREATE TABLE Deparmnent (ID INT NOT NULL identity(1,1) FOREIGN KEY  REFERENCES EMPLOYEE_PAYROLL (id),name varchar(20), Dept varchar(50))  
+
+  INSERT INTO Deparmnent(name,Dept) values 
+  ('BILL','Sales'),('BILL','Marketing')
+
+   SELECT *  FROM employee_payroll ADDRESS  JOIN Deparmnent PAY
+  ON (ADDRESS.NAME = PAY.name)
+
+
 
 
 
