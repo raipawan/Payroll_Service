@@ -57,6 +57,22 @@ SELECT MAX(SALARY) FROM employee_payroll
 WHERE GENDER = 'M' GROUP BY GENDER;
 
 
+/*uc8*/
+alter table employee_payroll 
+ADD  PHONE varchar(20)  ,
+ ADDRESS VARCHAR(150) not null DEFAULT 'jhansi_up', 
+  DEPARTMENT VARCHAR(20) ;
+
+
+    /*uc9*/
+alter table employee_payroll 
+ADD  Basic_Pay INT  NOT NULL DEFAULT 0,
+ Deductions  INT NOT NULL  DEFAULT 0 ,
+ Taxable_Pay  INT  NOT NULL DEFAULT 0 ,
+ Income_Tax  INT  NOT NULL DEFAULT 0,
+ Net_Pay  INT  NOT NULL DEFAULT 0;
+
+
 
 
 
