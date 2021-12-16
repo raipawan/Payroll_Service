@@ -13,7 +13,12 @@ START DATE NOT NULL
 );
 
 
-
+/*uc3*/
+INSERT INTO employee_payroll( name,salary,start) VALUES
+('BILL',  100000,'2018-01-03'),
+('SMITH', 200000,'2019-10-03'),
+('ASH',   300000,'2020-11-03'),
+('ALEXA', 400000,'2020-11-03');
 
 
 
