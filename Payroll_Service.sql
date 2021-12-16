@@ -32,6 +32,16 @@ SELECT salary FROM employee_payroll WHERE name = 'Bill';
 SELECT SALARY FROM employee_payroll WHERE START BETWEEN CAST('2018-01-04'AS DATE) AND GETDATE();
 
 
+/*uc6*/
+alter table employee_payroll add GENDER varchar(20) default  null;
+
+update employee_payroll
+set GENDER = 'M' WHERE NAME = 'BILL' OR NAME = 'SMITH';
+
+update employee_payroll
+set GENDER ='F' WHERE NAME = 'ASH' OR NAME = 'ALEXA';
+
+
 
 
 
