@@ -21,6 +21,10 @@ INSERT INTO employee_payroll( name,salary,start) VALUES
 ('ALEXA', 400000,'2020-11-03');
 
 
+/*uc4*/
+select * from employee_payroll;
+
+
 
 
 
